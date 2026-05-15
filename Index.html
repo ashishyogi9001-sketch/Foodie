@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Media-query.css">
+</head>
+
+<body>
+    <!-- Header  -->
+    <header class="header">
+
+        <nav class="navbar flex between wrapper" id="navbar">
+            <div class="logo">
+                <h2>Foodie. </h2>
+            </div>
+
+            <button type="button" class="close-btn" id="close-btn" aria-label="Close navigation">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <ul class="nav-links flex gap-3">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- shopping cart  -->
+            <div class="destop-action flex gap-2">
+                <a href="buy-now.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-value">0</span>
+                </a>
+
+                <a href="login.html" class="btn">
+                    Sign In
+                    &nbsp;
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+
+            </div>
+
+
+        </nav>
+        <div class="mobile-action wrapper">
+
+            <div class="logo">
+                <h2>Foodie. </h2>
+            </div>
+
+            <button type="button" class="humberger" id="humberger" aria-label="Open navigation" aria-controls="navbar"
+                aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- section part  -->
+    <main>
+        <section id="home">
+            <div class="hero-section wrapper flex between">
+                <div class="hero-content">
+                    <h1>Delicious Food, Delivered To You</h1>
+                    <p>Experience the convenience of having your favorite meals delivered right to your doorstep. Our food delivery service offers a wide variety of cuisines to satisfy every craving. Whether you're in the mood for pizza, sushi, or a healthy salad, we've got you covered. With just a few clicks, you can enjoy restaurant-quality food without leaving your home. Order now and indulge in a delicious dining experience!</p>
+                    <a href="#menu" class="btn">Order Now</a>
+                </div>
+
+                <div class="hero-image">
+                    <img src="images/delivery-boy.png"
+                        alt="Delicious Food">
+
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section" id="menu">
+            <div class="wrapper">
+                <div class="section-heading">
+                    <span>Popular dishes</span>
+                    <h2>Customer favorites</h2>
+                    <p>Fresh meals prepared with bold flavors, quick delivery, and delicious prices.</p>
+                </div>
+
+                <div class="food-grid">
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add burger to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/burger.png" alt="Cheese burger">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Burger</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <h3>Cheese Burger</h3>
+                            <p>Juicy grilled patty, melted cheese, fresh veggies, and signature sauce.</p>
+                            <div class="food-bottom">
+                                <strong>$12.99</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add pizza to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/pizza.png" alt="Pepperoni pizza">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Pizza</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <h3>Pepperoni Pizza</h3>
+                            <p>Crispy crust topped with mozzarella, pepperoni, herbs, and tomato sauce.</p>
+                            <div class="food-bottom">
+                                <strong>$18.49</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add chicken roll to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/chicken-roll.png" alt="Chicken roll">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Roll</span>
+                                <span><i class="fa-solid fa-star"></i> 4.7</span>
+                            </div>
+                            <h3>Chicken Roll</h3>
+                            <p>Tender chicken, crunchy veggies, creamy dressing, and soft wrap bread.</p>
+                            <div class="food-bottom">
+                                <strong>$10.25</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add lasagna to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/lasagna.png" alt="Classic lasagna">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Pasta</span>
+                                <span><i class="fa-solid fa-star"></i> 4.9</span>
+                            </div>
+                            <h3>Classic Lasagna</h3>
+                            <p>Layered pasta, rich tomato sauce, creamy cheese, and Italian seasoning.</p>
+                            <div class="food-bottom">
+                                <strong>$15.75</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add spaghetti to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/spaghetti.png" alt="Creamy spaghetti">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Italian</span>
+                                <span><i class="fa-solid fa-star"></i> 4.6</span>
+                            </div>
+                            <h3>Creamy Spaghetti</h3>
+                            <p>Silky pasta tossed with creamy sauce, herbs, and parmesan cheese.</p>
+                            <div class="food-bottom">
+                                <strong>$13.50</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="food-card">
+                        <button type="button" class="wishlist-btn" aria-label="Add spring roll to wishlist">
+                            <i class="fa-regular fa-heart"></i>
+                        </button>
+                        <div class="food-image">
+                            <img src="images/spring-roll.png" alt="Crispy spring rolls">
+                        </div>
+                        <div class="food-info">
+                            <div class="food-meta">
+                                <span>Snack</span>
+                                <span><i class="fa-solid fa-star"></i> 4.8</span>
+                            </div>
+                            <h3>Spring Rolls</h3>
+                            <p>Crispy golden rolls packed with vegetables and served with tangy dip.</p>
+                            <div class="food-bottom">
+                                <strong>$8.99</strong>
+                                <button type="button" class="add-cart-btn">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    Add to Cart
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="wrapper about-layout">
+                <div class="about-image">
+                    <img src="images/delivery-boy-with-phone.png" alt="Foodie delivery partner">
+                </div>
+
+                <div class="about-content">
+                    <div class="section-heading">
+                        <span>About us</span>
+                        <h2>Fast delivery, fresh food, happy moments</h2>
+                        <p>Foodie brings your favorite restaurant meals to your doorstep with reliable delivery, careful packaging, and flavors that feel freshly made every time.</p>
+                    </div>
+
+                    <div class="about-features">
+                        <article>
+                            <img src="images/fast-delivery.png" alt="Fast delivery icon">
+                            <div>
+                                <h3>Quick Delivery</h3>
+                                <p>Our delivery partners keep your food moving so it reaches you hot and on time.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="images/best-quality.png" alt="Best quality icon">
+                            <div>
+                                <h3>Quality Meals</h3>
+                                <p>We focus on fresh ingredients, trusted restaurants, and consistent taste.</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="images/easy-to-order.png" alt="Easy ordering icon">
+                            <div>
+                                <h3>Easy Ordering</h3>
+                                <p>Find dishes, add them to your cart, and checkout with a simple flow.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="wrapper contact-layout">
+                <div class="contact-content">
+                    <div class="section-heading">
+                        <span>Contact us</span>
+                        <h2>Need help with your order?</h2>
+                        <p>Reach out for order support, restaurant partnerships, or delivery questions. We are here to make every meal smoother.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <article>
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Call Us</h3>
+                                <p>+1 234 567 890</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>support@foodie.com</p>
+                            </div>
+                        </article>
+
+                        <article>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Foodie Kitchen Hub, Downtown</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="https://formsubmit.co/ashishyogi2627@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Foodie contact message">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div class="form-row">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" placeholder="Your name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" placeholder="Your email" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-row">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer part  -->
+    <footer class="site-footer">
+        <div class="wrapper footer-layout">
+            <div class="footer-brand">
+                <a href="#home" class="footer-logo">Foodie.</a>
+                <p>Fresh meals, fast delivery, and favorite dishes brought closer to your table every day.</p>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="buy-now.html">My Cart</a></li>
+                    <li><a href="login.html">Sign In</a></li>
+                    <li><a href="sign.html">Create Account</a></li>
+                    <li><a href="#contact">Help Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Get In Touch</h3>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 234 567 890</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>support@foodie.com</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Foodie Kitchen Hub, Downtown</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="wrapper footer-bottom">
+            <p>&copy; 2026 Foodie. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="product-modal" id="product-modal" aria-hidden="true">
+        <div class="product-dialog" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+            <button type="button" class="product-close" id="product-close" aria-label="Close product details">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="product-detail">
+                <div class="product-detail-image">
+                    <img src="" alt="" id="detail-image">
+                </div>
+
+                <div class="product-detail-info">
+                    <span id="detail-category">Popular</span>
+                    <h2 id="detail-title">Food Name</h2>
+                    <p id="detail-description">Food description</p>
+
+                    <div class="detail-highlights">
+                        <span><i class="fa-solid fa-star"></i> <span id="detail-rating">4.8</span></span>
+                        <span><i class="fa-solid fa-truck-fast"></i> 25-30 min</span>
+                        <span><i class="fa-solid fa-fire"></i> Fresh</span>
+                    </div>
+
+                    <div class="detail-bottom">
+                        <strong id="detail-price">$0.00</strong>
+                        <button type="button" class="detail-add-btn" id="detail-add-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="related-products">
+                <h3>More dishes you may like</h3>
+                <div class="related-grid" id="related-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

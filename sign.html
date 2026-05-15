@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Foodie.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Media-query.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-shell">
+            <div class="auth-brand">
+                <a href="Index.html" class="auth-logo">Foodie.</a>
+                <div class="auth-brand-content">
+                    <span class="auth-badge">Fresh deals every day</span>
+                    <h1>Create your Foodie account</h1>
+                    <p>Join Foodie to save your favorite meals, track fast deliveries, and unlock member-only discounts.</p>
+                </div>
+                <img src="images/burger.png" alt="Fresh burger meal">
+            </div>
+
+            <div class="auth-card">
+                <a href="Index.html" class="auth-back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back to home
+                </a>
+
+                <div class="auth-heading">
+                    <p>Start ordering smarter</p>
+                    <h2>Sign Up</h2>
+                </div>
+
+                <form class="auth-form">
+                    <label for="name">Full Name</label>
+                    <div class="input-group">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" id="name" placeholder="Enter your name" autocomplete="name" required>
+                    </div>
+
+                    <label for="email">Email Address</label>
+                    <div class="input-group">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Enter your email" autocomplete="email" required>
+                    </div>
+
+                    <label for="password">Password</label>
+                    <div class="input-group">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password" placeholder="Create a password" autocomplete="new-password" required>
+                    </div>
+
+                    <button type="submit" class="auth-submit">Create Account</button>
+                </form>
+
+                <p class="auth-switch">
+                    Already have an account?
+                    <a href="login.html">Sign In</a>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
